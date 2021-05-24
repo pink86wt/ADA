@@ -1,0 +1,8 @@
+:root {
+    --bg-logo: #221f20;
+    --bg-nav: #f2f2f2;
+}
+
+#header-logo > .row {
+    background-color: var(--bg-logo);
+}
