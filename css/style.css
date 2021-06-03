@@ -7,3 +7,8 @@
 #header-logo {
     background-color: var(--bg-logo);
 }
+
+#footer-socials .bi {
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
