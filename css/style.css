@@ -30,8 +30,3 @@
     background-position: left center;
     background-size: contain;
 }
-
-/* TEMPORARY CSS */
-#home-primary-section, #home-academy-section {
-    min-height: 800px;
-}
