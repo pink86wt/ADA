@@ -33,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="academy-experience.html">Academy experience</a>
+                        <a class="nav-link active" aria-current="page" href="academy-experience.html">Academy experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Newsroom</a>
@@ -58,78 +58,72 @@
         </div>
     </nav>
     
-    <section class="container-fluid py-5 min-vh-100" id="home-primary-section">
-        <div class="container vh-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-8 opaque-bg p-4 my-5">
-                    <p class="lead">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio corrupti adipisci atque unde.
-                        Facilis, quos et cum mollitia aperiam quisquam dignissimos in doloribus, sapiente accusamus
-                        fugiat at ipsum excepturi ipsam!
-                    </p>
-                    <button type="button" class="btn btn-primary">Join us</button>
-                </div>
-                <div class="col-4"></div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="container-fluid py-5 min-vh-100 mb-5" id="home-academy-section">
-        <div class="container vh-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-4"></div>
-                <div class="col-8 opaque-bg p-4 my-5 text-end">
-                    <p class="lead">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio corrupti adipisci atque unde.
-                        Facilis, quos et cum mollitia aperiam quisquam dignissimos in doloribus, sapiente accusamus
-                        fugiat at ipsum excepturi ipsam!<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloribus magnam voluptas
-                        nostrum possimus animi nemo nam error veritatis ex, minus tempora explicabo rem ratione
-                        voluptates. Ut libero delectus quod?
-                    </p>
-                    <button type="button" class="btn btn-primary">Learn more</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <div class="container">
-        <div class="row my-5">
-            <h2>Latest news</h2>
+        <div class="row ms-header py-5 my-5">
+            <h1 class="ms-header__title">
+                Education has never been so
+                <div class="ms-slider">
+                    <ul class="ms-slider__words">
+                        <li class="ms-slider__word ms-slider-color1">#efficient</li>
+                        <li class="ms-slider__word ms-slider-color2">#diverse</li>
+                        <li class="ms-slider__word ms-slider-color3">#fun</li>
+                        <!-- This last word needs to duplicate the first one to ensure a smooth infinite animation -->
+                        <li class="ms-slider__word ms-slider-color1">#efficient</li>
+                    </ul>
+                </div>
+            </h1>
         </div>
-        <div class="row gx-5">
-            <div class="col">
-                <div class="card">
-                    <img src="assets/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card with stretched link</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="stretched-link">Read more</a>
-                    </div>
-                </div>
+        <div class="row embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b0tuheTbmzA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="row border-bottom py-5 my-5">
+            <h1>La Developer Academy è una collaborazione tra l’Università di Napoli Federico II e Apple.</h1>
+        </div>
+        <p>La formazione all’Academy è incentrata sullo sviluppo di applicazioni per il più innovativo e vivace ecosistema di app al mondo. Il programma è focalizzato sullo sviluppo software, la creazione di startup e la progettazione di app con enfasi sulla creatività e la collaborazione per rendere gli studenti in grado di sviluppare le competenze necessarie per avere successo. L’Academy ha l’obiettivo di attirare studenti con diverse tipologie di esperienze pregresse e la formazione è progettata per supportare non solo coloro che hanno già conoscenze in ambito informatico ma anche giovani interessati ad aree quali la progettazione di interfacce grafiche e il business.</p>
+        <p>Il programma è aperto a studenti provenienti dall’Italia e dalle altre parti del mondo. Le lezioni all’Academy sono tutte basate sul Challenge Based Learning (CBL), un approccio multidisciplinare all’insegnamento e all’apprendimento. Usando il CBL, i nostri docenti incoraggiano gli studenti a sfruttare le tecnologie che usano quotidianamente per risolvere problemi reali. CBL è un metodo collaborativo e pratico, che richiede agli studenti di lavorare con altri studenti, i loro docenti e gli esperti in giro per il mondo per sviluppare una più approfondita conoscenza delle materie che studiano, accettare e risolvere sfide, intraprendere azioni, condividere la loro esperienza ed entrare in una discussione globale attorno a problematiche importanti. All’Academy, il linguaggio usato per l’insegnamento è l’inglese.</p>
+        <div class="row py-5 mt-5">
+            <h1>#OpenUp!</h1>
+            <h2>Our mentor’s perspective challenges you to open up!</h2>
+        </div>
+        <div class="row embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x-NM06FEmXA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="row py-5">
+            <p>Oltre a fornire a tutti gli studenti i cosiddetti “soft skill” (intelligenza emotiva, adattabilità, abilità a collaborare e negoziare, consapevolezza situazionale, abilità a comunicare, ecc.), la Developer Academy a Napoli sfrutta il CBL per insegnare argomenti che ricadono nei seguenti ambiti:</p>
+            <ol class="py-3">
+                <li>Programmazione:</li>
+                    <ul class="pb-3">
+                        <li>Concetti base e avanzati della programmazione orientata agli oggetti</li>
+                        <li>Design Patterns e la loro applicazione per la realizzazione di complesse applicazioni distribuite per Internet</li>
+                        <li>Programmazione con il linguaggio Swift</li>
+                        <li>Fondamenti della programmazione server-side</li>
+                        <li>Fondamenti di basi di dati (SQL, NoSQL)</li>
+                    </ul>
+                <li>Progettazione delle Interfacce Grafiche (HCI):</li>
+                <ul class="pb-3">
+                    <li>Design Thinking</li>
+                    <li>Rapid prototyping</li>
+                    <li>Design patterns orientate alla Quality of Experience (QoE)</li>
+                </ul>
+                <li>Business:</li>
+                <ul>
+                    <li>Come accedere al mercato in maniera veloce e sostenibile</li>
+                    <li>Gestione dei diritti di proprietà intellettuale</li>
+                    <li>Sviluppo dei prodotti</li>
+                    <li>Business modeling</li>
+                    <li>Business planning</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="row embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KczSJbxgbeU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="row pt-3 pb-5">
+            <div class="col-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PCmISU4w9Os" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card with stretched link</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="stretched-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card with stretched link</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="stretched-link">Read more</a>
-                    </div>
-                </div>
+            <div class="col-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N5yD_zOVBL0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -160,6 +154,7 @@
             <div class="row pt-3">
                 <img src="assets/istituzioni2020.jpg" class="img-fluid w-25 mx-auto d-block" alt="...">
             </div>
+            <div class="row"></div>
         </div>
     </footer>
 
