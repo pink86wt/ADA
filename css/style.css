@@ -18,17 +18,21 @@
 }
 
 #home-primary-section {
-    background-image: url(../assets/img1.png);
+    background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 #home-academy-section {
-    background-image: url(../assets/img2.png);
+    background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
+}
+
+#article-img {
+    border-radius: 10em;
 }
 
 
