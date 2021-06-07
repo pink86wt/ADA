@@ -17,7 +17,7 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-#home-primary-section {
+#home-primary-section, #enrol-primary-section, #enrol-moodle-section {
     background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
     background-position: right center;
@@ -29,6 +29,10 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
+}
+
+#home-primary-section, #home-academy-section, #enrol-primary-section, #enrol-moodle-section, .vh-80 {
+    height: 80vh;
 }
 
 #article-img {
