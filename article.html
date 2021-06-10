@@ -33,28 +33,46 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link m-2 pe-3" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="academy-experience.html">Academy experience</a>
+                        <a class="nav-link m-2 px-3" href="academy-experience.html">Academy experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="newsroom.html">Newsroom</a>
+                        <a class="nav-link m-2 px-3 active" aria-current="page" href="newsroom.html">Newsroom</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faq.html">F.A.Q</a>
+                        <a class="nav-link m-2 px-3" href="faq.html">F.A.Q</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="enrolment.html">Enrolment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Italiano</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                        <a class="nav-link m-2 px-3" href="enrolment.html">Enrolment</a>
                     </li>
                 </ul>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="btn-group m-1 px-4" id="change-lang">
+                    <button type="button" class="btn btn-outline-primary"><img src="https://image.flaticon.com/icons/png/512/197/197626.png" class="img-fluid" width="15px"/>
+                        ITA</button>
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu ms-4">
+                        <li><button class="dropdown-item" href="#"><img src="https://image.flaticon.com/icons/png/512/197/197374.png" class="img-fluid" width="15px"/>ENG</button></li>
+                    </ul>
+                </div>
+
+                <!-- <button type="button" class="btn btn-outline-primary m-1">
+                    <i class="bi bi-search"></i>
+                    Search
+                </button> -->
+
+                <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal">
+                    <!-- <i class="bi bi-envelope"></i> -->
                     Stay updated
                 </button>
             </div>
@@ -78,8 +96,8 @@
         <p class="lead">La formazione all’Academy è incentrata sullo sviluppo di applicazioni per il più innovativo e vivace ecosistema di app al mondo. Il programma è focalizzato sullo sviluppo software, la creazione di startup e la progettazione di app con enfasi sulla creatività e la collaborazione per rendere gli studenti in grado di sviluppare le competenze necessarie per avere successo. L’Academy ha l’obiettivo di attirare studenti con diverse tipologie di esperienze pregresse e la formazione è progettata per supportare non solo coloro che hanno già conoscenze in ambito informatico ma anche giovani interessati ad aree quali la progettazione di interfacce grafiche e il business.</p>
         <p class="lead">Il programma è aperto a studenti provenienti dall’Italia e dalle altre parti del mondo. Le lezioni all’Academy sono tutte basate sul Challenge Based Learning (CBL), un approccio multidisciplinare all’insegnamento e all’apprendimento. Usando il CBL, i nostri docenti incoraggiano gli studenti a sfruttare le tecnologie che usano quotidianamente per risolvere problemi reali. CBL è un metodo collaborativo e pratico, che richiede agli studenti di lavorare con altri studenti, i loro docenti e gli esperti in giro per il mondo per sviluppare una più approfondita conoscenza delle materie che studiano, accettare e risolvere sfide, intraprendere azioni, condividere la loro esperienza ed entrare in una discussione globale attorno a problematiche importanti. All’Academy, il linguaggio usato per l’insegnamento è l’inglese.</p>
     </div>
-    
 
+    <!-- FOOTER -->
     <footer class="container-fluid border-top mt-5 py-5">
         <div class="container">
             <div class="row">
@@ -89,27 +107,38 @@
                         <dt class="col-sm-1"><i class="bi bi-geo-alt-fill"></i></dt>
                         <dd class="col-sm-11">Corso Nicolangelo Protopisani 70,<br>80146 Napoli NA - Italy</dd>
                         <dt class="col-sm-1"><i class="bi bi-envelope-fill"></i></dt>
-                        <dd class="col-sm-11"><a href="mailto:developeracademy@unina.it">developeracademy@unina.it</a></dd>
+                        <dd class="col-sm-11"><a href="mailto:developeracademy@unina.it">developeracademy@unina.it</a>
+                        </dd>
                         <dt class="col-sm-1"><i class="bi bi-globe2"></i></dt>
-                        <dd class="col-sm-11"><a href="http://www.developeracademy.unina.it">www.developeracademy.unina.it</a></dd>
+                        <dd class="col-sm-11"><a
+                                href="http://www.developeracademy.unina.it">www.developeracademy.unina.it</a></dd>
                     </dl>
+                </div>
+                <div class="col" id="footer-socials">
+                    <h5 class="text-uppercase pb-5">Directions in Apple Maps</h5>
+
+                    <button class="btn btn-primary">
+                        <i class="bi bi-signpost"></i>
+                        Open Apple Maps
+                    </button>
                 </div>
                 <div class="col text-end" id="footer-socials">
                     <h5 class="text-uppercase pb-5">Follow us on</h5>
-                    <a href="https://twitter.com/devacademyunina" target="_blank"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/developeracademy.unina" target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/appledeveloperacademy.unina" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="http://www.youtube.com/c/developerAcademyUnina" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.instagram.com/appledeveloperacademy.unina" target="_blank"><i
+                            class="bi bi-instagram m-2"></i></a>
+                    <a href="https://www.facebook.com/developeracademy.unina" target="_blank"><i
+                            class="bi bi-facebook m-2"></i></a>
+                    <a href="https://twitter.com/devacademyunina" target="_blank"><i class="bi bi-twitter m-2"></i></a>
+                    <a href="http://www.youtube.com/c/developerAcademyUnina" target="_blank"><i
+                            class="bi bi-youtube m-2"></i></a>
                 </div>
             </div>
             <div class="row pt-3">
                 <img src="assets/istituzioni2020.jpg" class="img-fluid w-25 mx-auto d-block" alt="...">
             </div>
-            <div class="row"></div>
         </div>
     </footer>
-
-
+    <!-- FINISH FOOTER-->
 
     <!-- Modal -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
@@ -120,8 +149,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-5">
-                    <img src="assets/envelope.png" class="mx-auto d-block" alt="...">
-                    <h3 class="text-center my-5">Subscribe to our newsletter</h3>
+                    <h3 class="text-center">Subscribe to our newsletter</h3>
+                    <img src="assets/envelope.png" class="mx-auto d-block mb-5" alt="...">
+
                     <div class="row">
                         <div class="col-7">
                             <p>Are you a Foundation Student?</p>
@@ -139,9 +169,8 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's username"
+                        <input type="text" class="form-control" placeholder="Your email address..."
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary" type="button" id="button-addon2">Submit</button>
                     </div>
@@ -151,6 +180,7 @@
     </div>
 
 
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

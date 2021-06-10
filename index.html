@@ -25,70 +25,58 @@
             <img src="assets/logo.png" class="img-fluid w-50 mx-auto d-block" alt="...">
         </div>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active m-2" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link m-2 pe-3 active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2" href="academy-experience.html">Academy experience</a>
+                        <a class="nav-link m-2 px-3" href="academy-experience.html">Academy experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2" href="newsroom.html">Newsroom</a>
+                        <a class="nav-link m-2 px-3" href="newsroom.html">Newsroom</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2" href="faq.html">F.A.Q</a>
+                        <a class="nav-link m-2 px-3" href="faq.html">F.A.Q</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2" href="enrolment.html">Enrolment</a>
+                        <a class="nav-link m-2 px-3" href="enrolment.html">Enrolment</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link m-2" href="#">Italiano</a>
-                    </li>
-                    <li class="nav-item m-2">
-                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-                    </li> -->
                 </ul>
 
-                <div class="btn-group m-1">
-                    <button type="button" class="btn btn-secondary"><img src="https://image.flaticon.com/icons/png/512/197/197626.png" class="img-fluid" width="15px"/>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="btn-group m-1 px-4" id="change-lang">
+                    <button type="button" class="btn btn-outline-primary"><img src="https://image.flaticon.com/icons/png/512/197/197626.png" class="img-fluid" width="15px"/>
                         ITA</button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu ms-4">
                         <li><button class="dropdown-item" href="#"><img src="https://image.flaticon.com/icons/png/512/197/197374.png" class="img-fluid" width="15px"/>ENG</button></li>
                     </ul>
                 </div>
 
-                <!-- <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-translate"></i>
-                        Languages
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Italian</a></li>
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                    </ul>
-                </div> -->
-
-                <button type="button" class="btn btn-secondary m-1">
+                <!-- <button type="button" class="btn btn-outline-primary m-1">
                     <i class="bi bi-search"></i>
                     Search
-                </button>
+                </button> -->
 
                 <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal"
                     data-bs-target="#newsletterModal">
-                    <i class="bi bi-envelope"></i>
+                    <!-- <i class="bi bi-envelope"></i> -->
                     Stay updated
                 </button>
-
             </div>
         </div>
     </nav>
+
     <section class="container-fluid" id="home-primary-section">
         <div class="container vh-80">
             <div class="row h-100 align-items-center">
@@ -178,6 +166,7 @@
             </div>
         </div>
     </section>
+
     <!-- FOOTER -->
     <footer class="container-fluid border-top mt-5 py-5">
         <div class="container">
@@ -230,7 +219,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-5">
-                    <h3 class="text-center ">Subscribe to our newsletter</h3>
+                    <h3 class="text-center">Subscribe to our newsletter</h3>
                     <img src="assets/envelope.png" class="mx-auto d-block mb-5" alt="...">
 
                     <div class="row">
@@ -259,6 +248,9 @@
             </div>
         </div>
     </div>
+
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
