@@ -10,10 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-
     <!--Custom CSS file-->
     <link href="css/style.css" rel="stylesheet">
-
 
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -27,40 +25,70 @@
             <img src="assets/logo.png" class="img-fluid w-50 mx-auto d-block" alt="...">
         </div>
     </header>
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active m-2" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="academy-experience.html">Academy experience</a>
+                        <a class="nav-link m-2" href="academy-experience.html">Academy experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="newsroom.html">Newsroom</a>
+                        <a class="nav-link m-2" href="newsroom.html">Newsroom</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faq.html">F.A.Q</a>
+                        <a class="nav-link m-2" href="faq.html">F.A.Q</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="enrolment.html">Enrolment</a>
+                        <a class="nav-link m-2" href="enrolment.html">Enrolment</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Italiano</a>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link m-2" href="#">Italiano</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item m-2">
                         <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+
+                <div class="btn-group m-1">
+                    <button type="button" class="btn btn-secondary"><img src="https://image.flaticon.com/icons/png/512/197/197626.png" class="img-fluid" width="15px"/>
+                        ITA</button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" href="#"><img src="https://image.flaticon.com/icons/png/512/197/197374.png" class="img-fluid" width="15px"/>ENG</button></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-translate"></i>
+                        Languages
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                </div> -->
+
+                <button type="button" class="btn btn-secondary m-1">
+                    <i class="bi bi-search"></i>
+                    Search
+                </button>
+
+                <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal">
+                    <i class="bi bi-envelope"></i>
                     Stay updated
                 </button>
+
             </div>
         </div>
     </nav>
-    
     <section class="container-fluid" id="home-primary-section">
         <div class="container vh-80">
             <div class="row h-100 align-items-center">
@@ -76,7 +104,6 @@
             </div>
         </div>
     </section>
-    
     <section class="container-fluid mb-5" id="home-academy-section">
         <div class="container vh-80">
             <div class="row h-100 align-items-center">
@@ -91,54 +118,67 @@
                         voluptates. Ut libero delectus quod?
                     </p>
                     <!-- <button type="button" class="btn btn-primary"><a href="academy-experience.html">Learn more</a></button> -->
-                    <a href="academy-experience.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Learn more</a>
+                    <a href="academy-experience.html" class="btn btn-primary btn-lg" tabindex="-1" role="button"
+                        aria-disabled="true">Learn more</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="container">
-        <div class="row my-5">
-            <h1>Latest news</h1>
+    <section id="last-news">
+        <div class="container">
+            <div class="row my-5">
+                <h1>Latest news</h1>
+            </div>
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">News one</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <button class="btn btn-primary">
+                                <a href="#" class="stretched-link">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">News two</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <button class="btn btn-primary">
+                                <a href="#" class="stretched-link">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">News three</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <button class="btn btn-primary">
+                                <a href="#" class="stretched-link">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row gx-5">
-            <div class="col">
-                <div class="card">
-                    <img src="assets/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card with stretched link</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="stretched-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card with stretched link</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="stretched-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card with stretched link</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="stretched-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
+    </section>
+    <!-- FOOTER -->
     <footer class="container-fluid border-top mt-5 py-5">
         <div class="container">
             <div class="row">
@@ -148,17 +188,30 @@
                         <dt class="col-sm-1"><i class="bi bi-geo-alt-fill"></i></dt>
                         <dd class="col-sm-11">Corso Nicolangelo Protopisani 70,<br>80146 Napoli NA - Italy</dd>
                         <dt class="col-sm-1"><i class="bi bi-envelope-fill"></i></dt>
-                        <dd class="col-sm-11"><a href="mailto:developeracademy@unina.it">developeracademy@unina.it</a></dd>
+                        <dd class="col-sm-11"><a href="mailto:developeracademy@unina.it">developeracademy@unina.it</a>
+                        </dd>
                         <dt class="col-sm-1"><i class="bi bi-globe2"></i></dt>
-                        <dd class="col-sm-11"><a href="http://www.developeracademy.unina.it">www.developeracademy.unina.it</a></dd>
+                        <dd class="col-sm-11"><a
+                                href="http://www.developeracademy.unina.it">www.developeracademy.unina.it</a></dd>
                     </dl>
+                </div>
+                <div class="col" id="footer-socials">
+                    <h5 class="text-uppercase pb-5">Directions in Apple Maps</h5>
+
+                    <button class="btn btn-primary">
+                        <i class="bi bi-signpost"></i>
+                        Open Apple Maps
+                    </button>
                 </div>
                 <div class="col text-end" id="footer-socials">
                     <h5 class="text-uppercase pb-5">Follow us on</h5>
-                    <a href="https://twitter.com/devacademyunina" target="_blank"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/developeracademy.unina" target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/appledeveloperacademy.unina" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="http://www.youtube.com/c/developerAcademyUnina" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.instagram.com/appledeveloperacademy.unina" target="_blank"><i
+                            class="bi bi-instagram m-2"></i></a>
+                    <a href="https://www.facebook.com/developeracademy.unina" target="_blank"><i
+                            class="bi bi-facebook m-2"></i></a>
+                    <a href="https://twitter.com/devacademyunina" target="_blank"><i class="bi bi-twitter m-2"></i></a>
+                    <a href="http://www.youtube.com/c/developerAcademyUnina" target="_blank"><i
+                            class="bi bi-youtube m-2"></i></a>
                 </div>
             </div>
             <div class="row pt-3">
@@ -166,25 +219,25 @@
             </div>
         </div>
     </footer>
-
-
+    <!-- FINISH FOOTER-->
 
     <!-- Modal -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-5">
-                <img src="assets/envelope.png" class="mx-auto d-block" alt="...">
-                <h3 class="text-center my-5">Subscribe to our newsletter</h3>
-                <div class="row">
-                    <div class="col-7">
-                        <p>Are you a Foundation Student?</p>
-                    </div>
-                    <div class="col-5 text-end">
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <h3 class="text-center ">Subscribe to our newsletter</h3>
+                    <img src="assets/envelope.png" class="mx-auto d-block mb-5" alt="...">
+
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Are you a Foundation Student?</p>
+                        </div>
+                        <div class="col-5 text-end">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                     value="option1">
@@ -197,9 +250,8 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's username"
+                        <input type="text" class="form-control" placeholder="Your email address..."
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary" type="button" id="button-addon2">Submit</button>
                     </div>
@@ -207,8 +259,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

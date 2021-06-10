@@ -8,9 +8,21 @@
     background-color: var(--bg-logo);
 }
 
+.nav-link{
+    font-size: 18px!important;
+}
+
+.nav-link:hover{
+    color:#009EDB!important;
+}
+
+#last-news a{
+    color:#fff !important;
+    text-decoration: none;;
+}
+
 #footer-socials .bi {
     font-size: 1.5rem;
-    padding-left: 15px;
 }
 
 .opaque-bg {
