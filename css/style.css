@@ -33,6 +33,11 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.large-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 #home-primary-section, #enrol-primary-section, #enrol-moodle-section {
     background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
@@ -49,10 +54,6 @@
 
 #home-primary-section, #home-academy-section, #enrol-primary-section, #enrol-moodle-section, .vh-80 {
     height: 80vh;
-}
-
-#article-img {
-    border-radius: 10em;
 }
 
 
