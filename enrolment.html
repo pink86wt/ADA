@@ -95,10 +95,12 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <!-- <li><a class="dropdown-item" data-bs-toggle="collapse" href="#collapseStudents" role="button" aria-expanded="false" aria-controls="collapseStudents">Call for Students</a></li> -->
-                            <li><a class="dropdown-item" href="#anchorStudents" onclick="collapse('collapseStudents')">Call for Students</a></li>
+                            <!-- <li><a class="dropdown-item" href="#anchorStudents" onclick="collapse('collapseStudents')">Call for Students</a></li> -->
+                            <li><a class="dropdown-item" href="#anchorStudents" id="studentsCall">Call for Students</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <!-- <li><a class="dropdown-item" data-bs-toggle="collapse" href="#collapseFoundation" role="button" aria-expanded="false" aria-controls="collapseFoundation">Call for Students from Apple Foundation Program</a></li> -->
-                            <li><a class="dropdown-item" href="#anchorFoundation" onclick="collapse('collapseFoundation')">Call for Students from Apple Foundation Program</a></li>
+                            <!-- <li><a class="dropdown-item" href="#anchorFoundation" onclick="collapse('collapseFoundation')">Call for Students from Apple Foundation Program</a></li> -->
+                            <li><a class="dropdown-item" href="#anchorFoundation" id="foundationCall">Call for Students from Apple Foundation Program</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="https://www.developeracademy.unina.it/en/join-us-on-moodle/" target="_blank">Moodle - Self-assestment platform</a></li>
                         </ul>
@@ -281,12 +283,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
 
+
     <script>
+        let studentsCall = document.getElementById('studentsCall');
+        let foundationCall = document.getElementById('foundationCall');
+        let collapseStudents = document.getElementById('collapseStudents');
+        let collapseFoundation = document.getElementById('collapseFoundation')
+        
+        studentsCall.addEventListener("click", function() {
+            collapseStudents.classList.toggle('show');
+            collapseFoundation.classList.remove('show');
+        });
+        
+        foundationCall.addEventListener("click", function() {
+            collapseFoundation.classList.toggle('show');
+            collapseStudents.classList.remove('show');
+        });
+    </script>
+
+    <!-- <script>
         function collapse(id) {
             document.getElementById(id).classList.toggle('show');
             document.getElementById((id == 'collapseStudents') ? 'collapseFoundation' : 'collapseStudents').classList.remove('show');
         }
-    </script>
+    </script> -->
 
 </body>
 
