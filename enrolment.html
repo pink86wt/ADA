@@ -30,22 +30,26 @@
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link m-2 pe-3" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link m-2 pe-lg-3" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2 px-3" href="academy-experience.html">Academy experience</a>
+                        <a class="nav-link m-2 px-lg-3" href="academy-experience.html">Academy experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2 px-3" href="newsroom.html">Newsroom</a>
+                        <a class="nav-link m-2 px-lg-3" href="newsroom.html">Newsroom</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2 px-3" href="faq.html">F.A.Q</a>
+                        <a class="nav-link m-2 px-lg-3" href="faq.html">F.A.Q</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link m-2 px-3 active" aria-current="page" href="enrolment.html">Enrolment</a>
+                        <a class="nav-link m-2 px-lg-3 active" aria-current="page" href="enrolment.html">Enrolment</a>
                     </li>
                 </ul>
 
@@ -53,34 +57,34 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
                 </form>
-
-                <div class="btn-group m-1 px-4" id="change-lang">
-                    <button type="button" class="btn btn-outline-primary">
-                        <img src="./assets/flags/197374.png" class="img-fluid" width="15px"/> ENG
-                    </button>
-                    <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu ms-4">
-                        <li>
-                            <button class="dropdown-item" href="#">
-                                <img src="./assets/flags/197626.png" class="img-fluid" width="15px"/> ITA
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- <button type="button" class="btn btn-outline-primary m-1">
-                    <i class="bi bi-search"></i>
-                    Search
-                </button> -->
-
-                <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal"
-                    data-bs-target="#newsletterModal">
-                    <!-- <i class="bi bi-envelope"></i> -->
-                    Stay updated
-                </button>
             </div>
+
+            <div class="btn-group m-1 px-4" id="change-lang">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="./assets/flags/197374.png" class="img-fluid" width="15px"/> ENG
+                </button>
+                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu ms-4">
+                    <li>
+                        <button class="dropdown-item" href="#">
+                            <img src="./assets/flags/197626.png" class="img-fluid" width="15px"/> ITA
+                        </button>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- <button type="button" class="btn btn-outline-primary m-1">
+                <i class="bi bi-search"></i>
+                Search
+            </button> -->
+    
+            <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal"
+                data-bs-target="#newsletterModal">
+                <!-- <i class="bi bi-envelope"></i> -->
+                Stay updated
+            </button>
         </div>
     </nav>
     
@@ -88,7 +92,7 @@
         <div class="container vh-80">
             <div class="row h-100 align-items-center">
                 <div class="col-8 opaque-bg p-4 my-5">
-                    <h1 class="large-title mb-5">Discover all the opportunities to join our Academy</h1>
+                    <h1 class="fs-1 fw-bold mb-5">Discover all the opportunities to join our Academy</h1>
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Call for applications
@@ -101,9 +105,11 @@
                             <!-- <li><a class="dropdown-item" data-bs-toggle="collapse" href="#collapseFoundation" role="button" aria-expanded="false" aria-controls="collapseFoundation">Call for Students from Apple Foundation Program</a></li> -->
                             <!-- <li><a class="dropdown-item" href="#anchorFoundation" onclick="collapse('collapseFoundation')">Call for Students from Apple Foundation Program</a></li> -->
                             <li><a class="dropdown-item" href="#anchorFoundation" id="foundationCall">Call for Students from Apple Foundation Program</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="https://www.developeracademy.unina.it/en/join-us-on-moodle/" target="_blank">Moodle - Self-assestment platform</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.developeracademy.unina.it/en/join-us-on-moodle/" target="_blank">Moodle - Self-assestment platform</a></li> -->
                         </ul>
+                        
+                        <a  href="#anchorMoodle" id="moodle" class="btn btn-outline-primary btn-lg ms-3" tabindex="-1" role="button" aria-disabled="true">Test Preparation</a>
 
                     </div>
                 </div>
@@ -149,8 +155,8 @@
             <div class="container vh-80">
                 <div class="row h-100 align-items-center">
                     <div class="col-8 opaque-bg p-4 my-5">
-                        <h1 class="large-title">Get ready for the test</h1>
-                        <p class="lead">Visit the <a href="https://www.developeracademy.unina.it/en/join-us-on-moodle/" target="_blank">self-assestment section</a>.<br>This website will allow you access to study materials and a self-assessment quiz to help you prepare for the in-person exam.</p>
+                        <h1 class="fs-1 fw-bold">Get ready for the test</h1>
+                        <p class="lead">Visit the <a href="https://moodle.developeracademy.unina.it/" target="_blank">self-assestment section</a>.<br>This website will allow you access to study materials and a self-assessment quiz to help you prepare for the in-person exam.</p>
                     </div>
                     <div class="col-4"></div>
                 </div>
@@ -186,11 +192,40 @@
         </section>
     </span>
 
+
+
+    <span class="collapse lead" id="collapseMoodle">
+        <section class="container">
+            <div class="ror my-5 py-5">
+                <a class="anchor" id="anchorMoodle"></a>
+                <h2>This portal contains useful materials which will help you get ready for the entry test.</h2>
+                <p>You can leverage the portal in order to get a flavor of what the main topics of the Apple Developer Academy
+                    are, and undertake some useful self-assessment tests at your own pace.</p>
+                <p>You can get started by following these easy steps:</p>
+                <ol>
+                    <li>Go to: <a href="https://moodle.developeracademy.unina.it/" target="_blank">https://moodle.developeracademy.unina.it/</a></li>
+                    <li>Click on Exam Preparation</li>
+                    <li>Click on Create new account</li>
+                    <li>Fill the form with all the required info</li>
+                    <li>You will receive an email with an activation link: click on it</li>
+                    <li>Once you’re logged in, click on the “courses” link in the left column</li>
+                    <li>Click on Exam Preparation</li>
+                    <li>Click on Enroll Me button</li>
+                    <li>Enjoy the course!</li>
+                </ol>
+                <p>Don’t miss this opportunity!</p>
+            </div>
+        </section>
+    </span>
+
+
+    
+
     <!-- FOOTER -->
     <footer class="container-fluid border-top py-5">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-4">
                     <h5 class="text-uppercase pb-3">Contact information</h5>
                     <dl class="row">
                         <dt class="col-sm-1"><i class="bi bi-geo-alt-fill"></i></dt>
@@ -203,7 +238,7 @@
                                 href="http://www.developeracademy.unina.it">www.developeracademy.unina.it</a></dd>
                     </dl>
                 </div>
-                <div class="col text-center">
+                <div class="col-md-4 text-center">
                     <h5 class="text-uppercase pb-5">Directions in Apple Maps</h5>
 
                     <button class="btn btn-primary">
@@ -211,7 +246,7 @@
                         Open Apple Maps
                     </button>
                 </div>
-                <div class="col text-end" id="footer-socials">
+                <div class="col-md-4 text-end" id="footer-socials">
                     <h5 class="text-uppercase pb-5">Follow us on</h5>
                     <a href="https://www.instagram.com/appledeveloperacademy.unina" target="_blank"><i
                             class="bi bi-instagram m-2"></i></a>
@@ -293,26 +328,29 @@
     <script>
         let studentsCall = document.getElementById('studentsCall');
         let foundationCall = document.getElementById('foundationCall');
+        let moodle = document.getElementById('moodle');
         let collapseStudents = document.getElementById('collapseStudents');
         let collapseFoundation = document.getElementById('collapseFoundation')
+        let collapseMoodle = document.getElementById('collapseMoodle')
         
         studentsCall.addEventListener("click", function() {
             collapseStudents.classList.toggle('show');
             collapseFoundation.classList.remove('show');
+            collapseMoodle.classList.remove('show');
         });
         
         foundationCall.addEventListener("click", function() {
             collapseFoundation.classList.toggle('show');
             collapseStudents.classList.remove('show');
+            collapseMoodle.classList.remove('show');
+        });
+        
+        moodle.addEventListener("click", function() {
+            collapseMoodle.classList.toggle('show');
+            collapseFoundation.classList.remove('show');
+            collapseStudents.classList.remove('show');
         });
     </script>
-
-    <!-- <script>
-        function collapse(id) {
-            document.getElementById(id).classList.toggle('show');
-            document.getElementById((id == 'collapseStudents') ? 'collapseFoundation' : 'collapseStudents').classList.remove('show');
-        }
-    </script> -->
 
 </body>
 
