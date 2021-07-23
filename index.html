@@ -28,10 +28,7 @@
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -51,37 +48,43 @@
                     </li>
                 </ul>
 
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                <form class="d-flex search-form-m">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary search-btn" type="submit"><i
+                            class="bi bi-search"></i></button>
                 </form>
             </div>
 
-            <div class="btn-group m-1 px-4" id="change-lang">
+            <div class="btn-group lng-form-m" id="change-lang">
                 <button type="button" class="btn btn-outline-primary">
-                    <img src="./assets/flags/197374.png" class="img-fluid" width="15px"/> ENG
+                    <img src="./assets/flags/197374.png" class="img-fluid" width="15px" /> ENG
                 </button>
-                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu ms-4">
                     <li>
                         <button class="dropdown-item" href="#">
-                            <img src="./assets/flags/197626.png" class="img-fluid" width="15px"/> ITA
+                            <img src="./assets/flags/197626.png" class="img-fluid" width="15px" /> ITA
                         </button>
                     </li>
                 </ul>
             </div>
-    
             <!-- <button type="button" class="btn btn-outline-primary m-1">
                 <i class="bi bi-search"></i>
                 Search
             </button> -->
-    
-            <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal"
-                data-bs-target="#newsletterModal">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal">
                 <!-- <i class="bi bi-envelope"></i> -->
                 Stay updated
+            </button>
+
+            <button class="navbar-toggler flex-column-reverse flex-md-row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
@@ -105,8 +108,11 @@
             <div class="row h-100 align-items-center">
                 <div class="col-4"></div>
                 <div class="col-8 opaque-bg p-4 my-5 text-end">
-                    <p class="lead fs-2 mb-5">
-                        Training at the Academy is aimed at developing apps for the world’s most innovative and vibrant app ecosystem. The program focuses on software development, startup creation and app design with an emphasis on creativity and collaboration to empower and equip students to develop the skills needed to succeed.
+                    <p class="lead fs-5 mb-5">
+                        Training at the Academy is aimed at developing apps for the world’s most innovative and vibrant
+                        app ecosystem. The program focuses on software development, startup creation and app design with
+                        an emphasis on creativity and collaboration to empower and equip students to develop the skills
+                        needed to succeed.
                     </p>
                     <!-- <button type="button" class="btn btn-primary"><a href="academy-experience.html">Learn more</a></button> -->
                     <a href="academy-experience.html" class="btn btn-primary btn-lg" tabindex="-1" role="button"
@@ -117,7 +123,7 @@
     </section>
     <section id="last-news">
         <div class="container">
-            <div class="row my-5">
+            <div class="row mb-2">
                 <h1>Latest news</h1>
             </div>
             <div class="row gx-5">
@@ -168,7 +174,7 @@
     <footer class="container-fluid border-top mt-5 py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 my-3">
+                <div class="col-sm-12 col-md-4 my-3">
                     <h5 class="text-uppercase pb-3">Contact information</h5>
                     <dl class="row">
                         <dt class="col-sm-1"><i class="bi bi-geo-alt-fill"></i></dt>
@@ -181,16 +187,16 @@
                                 href="http://www.developeracademy.unina.it">www.developeracademy.unina.it</a></dd>
                     </dl>
                 </div>
-                <div class="col-md-4 my-3 text-center">
-                    <h5 class="text-uppercase pb-5">Directions in Apple Maps</h5>
+                <div class="col-sm-12 col-md-4 my-3 text-center">
+                    <h5 class="text-uppercase pb-3">Directions in Apple Maps</h5>
 
                     <button class="btn btn-primary">
                         <i class="bi bi-signpost"></i>
                         Open Apple Maps
                     </button>
                 </div>
-                <div class="col-md-4 my-3 text-end" id="footer-socials">
-                    <h5 class="text-uppercase pb-5">Follow us on</h5>
+                <div class="col-sm-12 col-md-4 my-3 text-end" id="footer-socials">
+                    <h5 class="text-uppercase pb-3">Follow us on</h5>
                     <a href="https://www.instagram.com/appledeveloperacademy.unina" target="_blank"><i
                             class="bi bi-instagram m-2"></i></a>
                     <a href="https://www.facebook.com/developeracademy.unina" target="_blank"><i
@@ -218,7 +224,7 @@
                 <div class="modal-body p-5">
                     <h3 class="text-center">Subscribe to our newsletter</h3>
                     <img src="assets/envelope.png" class="mx-auto d-block mb-5" alt="...">
-                    <p>Don’t miss the change, sign up with your email!</p>
+                    <p>Subscribe with your email to stay updated and receiving news from the Apple Developer Academy</p>
                     <div class="row">
                         <div class="col-7">
                             <p>Are you a Foundation Student?</p>
@@ -236,6 +242,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Receive news about:</p>
+                        </div>
+                        <div class="col-8 text-end">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Enrollment</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">All the updates</label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Your email address..."
                             aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -244,7 +267,8 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
-                            <small>I have read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</small>
+                            <small>I have read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy
+                                    Policy</a>.</small>
                         </label>
                     </div>
                 </div>

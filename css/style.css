@@ -38,6 +38,23 @@
     font-weight: bold;
 }
 
+.modal-dialog {
+    max-width: 600px;
+}
+
+.lng-form-m,
+.search-form-m{
+    margin-right:10px;
+}
+
+.form-control{
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.search-btn{
+    border-radius: 0 .25rem .25rem 0;
+}
+
 #home-primary-section, #enrol-primary-section, #enrol-moodle-section {
     background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
