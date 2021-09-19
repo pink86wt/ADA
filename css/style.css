@@ -59,14 +59,14 @@
     background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 #home-academy-section {
     background-image: url(../assets/placeholderSquare.png);
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 #home-primary-section, #home-academy-section, #enrol-primary-section, #enrol-moodle-section, .vh-80 {
@@ -80,6 +80,13 @@ a.anchor {
     visibility: hidden;
 }
 
+#lang {
+    min-width: 80px;
+}
+
+#menu-btn {
+    min-width: 250px;
+}
 
 
 /* academy-experience.html sliding text CSS*/
